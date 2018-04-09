@@ -70,7 +70,7 @@ sudo gem install jekyll bundler -n /usr/local/bin/
 
 
 ### 标签页小图标
-我是在localhost环境下试运行的，发现我自己换的小图标 favicon.ico 在浏览器标签页上怎么都不显示，很纳闷，然后想到我这个 Mac 下面的 Photoshop 没有导出 ico 的选项，只能先导出 bmp ，再手改 ico 。是不是这个 ico 文件有问题啊，然后又找了个在线转 ico 的网站，导出 ico ，再试一次，还是不行，于是找到了原作者的代码
+我是在localhost环境下试运行的，发现我自己换的小图标 favicon.ico 在浏览器标签页上怎么都不显示，很纳闷，然后想到我这个 Mac 下面的 Photoshop 没有导出 ico 的选项，只能先导出 bmp ，再手改 ico 。是不是这个 ico 文件有问题啊，然后又找了个在线转 ico 的网站，导出 ico ，再试一次，还是不行，于是找到了原作者的代码：
 
 ```html
 <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
