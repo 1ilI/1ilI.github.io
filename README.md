@@ -52,7 +52,7 @@ chmod 777 /usr/bin
 chmod: Unable to change file mode on /usr/bin: Operation not permitted
 ```
 
-凭什么，我寄几的电脑，`/usr/bin` 这个目录没有权限，那还有谁有权限！！
+凭什么，我寄几的电脑，`/usr/bin`  这个目录没有权限，那还有谁有权限！！
 
 一顿搜索后才发现，原来早在 Mac OS X 10.11 之后就一些目录就被视为系统位置且不可操作了(´･_･`)，那只能换个位置安装喽，后来找到了Jekyll的一些文档，里面写好了针对 10.11 之后应该如何操作的了，地址： [https://jekyllrb.com/docs/troubleshooting/#jekyll--mac-os-x-1011](https://jekyllrb.com/docs/troubleshooting/#jekyll--mac-os-x-1011)
 
