@@ -52,9 +52,9 @@ chmod 777 /usr/bin
 chmod: Unable to change file mode on /usr/bin: Operation not permitted
 ```
 
-凭什么，我寄几的电脑，`/usr/bin`  这个目录没有权限，那还有谁有权限！！
+凭什么，我寄几的电脑，`/usr/bin`  这个目录没有权限，那还有谁有权限！！
 
-一顿搜索后才发现，原来早在 Mac OS X 10.11 之后就一些目录就被视为系统位置且不可操作了(´･_･`)，那只能换个位置安装喽，后来找到了Jekyll的一些文档，里面写好了针对 10.11 之后应该如何操作的了，地址： [https://jekyllrb.com/docs/troubleshooting/#jekyll--mac-os-x-1011](https://jekyllrb.com/docs/troubleshooting/#jekyll--mac-os-x-1011)
+一顿搜索后才发现，原来早在 Mac OS X 10.11 之后就一些目录就被视为系统位置且不可操作了(´･_･`)，那只能换个位置安装喽，后来找到了Jekyll的一些文档，里面写好了针对 10.11 之后应该如何操作的了，地址： [https://jekyllrb.com/docs/troubleshooting/#jekyll--mac-os-x-1011](https://jekyllrb.com/docs/troubleshooting/#jekyll--mac-os-x-1011)
 
 ```bash
 #这两个竟然都可以
@@ -70,16 +70,16 @@ sudo gem install jekyll bundler -n /usr/local/bin/
 
 
 ### 标签页小图标
-我是在localhost环境下试运行的，发现我自己换的小图标 favicon.ico 在浏览器标签页上怎么都不显示，很纳闷，然后想到我这个 Mac 下面的 Photoshop 没有导出 ico 的选项，只能先导出 bmp ，再手改 ico 。是不是这个 ico 文件有问题啊，然后又找了个在线转 ico 的网站，导出 ico ，再试一次，还是不行，于是找到了原作者的代码
+我是在localhost环境下试运行的，发现我自己换的小图标 favicon.ico 在浏览器标签页上怎么都不显示，很纳闷，然后想到我这个 Mac 下面的 Photoshop 没有导出 ico 的选项，只能先导出 bmp ，再手改 ico 。是不是这个 ico 文件有问题啊，然后又找了个在线转 ico 的网站，导出 ico ，再试一次，还是不行，于是找到了原作者的代码
 
 ```html
 <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
 <link rel="icon" href="/favicon.ico?" type="image/x-icon">
 ```
 
-嗯？ ` href="/favicon.ico?" ` 最后这个问号哪来的，黑人问号脸？不对啊，原作者就是那么写的，而且他博客上也没毛病啊，但是这个问号到底是干嘛的，删了试试？试了竟然可以显示，不是前端工程师的我感到很奇怪。
+嗯？ ` href="/favicon.ico?" ` 最后这个问号哪来的，黑人问号脸？不对啊，原作就是那么写的，而且他博客上也没毛病啊，但是这个问号到底是干嘛的，删了试试？试了竟然可以显示，不是前端工程师的我感到很奇怪。
 
-好吧，那就这样吧，` href="/favicon.ico" `，提交推送，线上环境一看，小图标又没有了
+好吧，那就这样吧，` href="/favicon.ico" `，提交推送，线上环境一看，小图标又没有了
 (╯°□°）╯︵ ┻━┻ 
 
 我又改回来了，本地环境不看也罢，线上可以就行，知道为什么的大神可以给我科普一下 (ｰ ｰ;)
