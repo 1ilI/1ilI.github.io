@@ -8,23 +8,23 @@
 ### 安装jekyll
 安装 jekyll 环境主要是为了让博客系统在本地跑起来，如果不想在本地运行，也是可以的，但还是强烈建议先试着在本地跑起来，没有什么问题后再推到的 GitHub 上。
 
-我这个系统是 macOS Heigh Sierra 的，安装时就只看了 [jekyll 官网](https://jekyllrb.com/) ，一共就四行代码，大喜，然后就入坑了。。。
+我这个系统是 macOS Heigh Sierra 的，安装时就只看了 [jekyll 官网](https://jekyllrb.com/) ，一共就四行代码，大喜，然后就入坑了。。。
 
 ```bash
-  gem install jekyll bundler
+gem install jekyll bundler
 
-  jekyll new my-awesome-site
+jekyll new my-awesome-site
 
-  cd my-awesome-site
+cd my-awesome-site
 
-  bundle exec jekyll serve
+bundle exec jekyll serve
 ```
 
 第一步 `gem install jekyll bundler` 就出错了
 
 ```bash
 ERROR:  While executing gem ... (Errno::EACCES)
-    Permission denied @ rb_sysopen - /Library/Ruby/Gems/2.3.0/gems/jekyll-3.7.3/.rubocop.yml
+Permission denied @ rb_sysopen - /Library/Ruby/Gems/2.3.0/gems/jekyll-3.7.3/.rubocop.yml
 ```
 
 看起来应该是没有权限，那么试一下 `sudo`
@@ -37,7 +37,7 @@ sudo gem install jekyll bundler
 
 ```bash
 ERROR:  While executing gem ... (Gem::FilePermissionError)
-    You don't have write permissions for the /usr/bin directory.
+You don't have write permissions for the /usr/bin directory.
 ```
 
 还是权限，说你没有写的权限，那好，我给你加 `chmod 777` 总可以了吧
@@ -73,8 +73,8 @@ sudo gem install jekyll bundler -n /usr/local/bin/
 我是在localhost环境下试运行的，发现我自己换的小图标 favicon.ico 在浏览器标签页上怎么都不显示，很纳闷，然后想到我这个 Mac 下面的 Photoshop 没有导出 ico 的选项，只能先导出 bmp ，再手改 ico 。是不是这个 ico 文件有问题啊，然后又找了个在线转 ico 的网站，导出 ico ，再试一次，还是不行，于是找到了原作者的代码
 
 ```html
-    <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico?" type="image/x-icon">
+<link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
+<link rel="icon" href="/favicon.ico?" type="image/x-icon">
 ```
 
 嗯？ ` href="/favicon.ico?" ` 最后这个问号哪来的，黑人问号脸？不对啊，原作者就是那么写的，而且他博客上也没毛病啊，但是这个问号到底是干嘛的，删了试试？试了竟然可以显示，不是前端工程师的我感到很奇怪。
@@ -83,3 +83,4 @@ sudo gem install jekyll bundler -n /usr/local/bin/
 (╯°□°）╯︵ ┻━┻ 
 
 我又改回来了，本地环境不看也罢，线上可以就行，知道为什么的大神可以给我科普一下 (ｰ ｰ;)
+
