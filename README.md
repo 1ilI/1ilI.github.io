@@ -10,7 +10,7 @@
 
 我这个系统是 macOS Heigh Sierra 的，安装时就只看了 [jekyll 官网](https://jekyllrb.com/) ，一共就四行代码，大喜，然后就入坑了。。。
 
-```
+```bash
   gem install jekyll bundler
 
   jekyll new my-awesome-site
@@ -22,33 +22,33 @@
 
 第一步 `gem install jekyll bundler` 就出错了
 
-```
+```bash
 ERROR:  While executing gem ... (Errno::EACCES)
     Permission denied @ rb_sysopen - /Library/Ruby/Gems/2.3.0/gems/jekyll-3.7.3/.rubocop.yml
 ```
 
 看起来应该是没有权限，那么试一下 `sudo`
 
-```
+```bash
 sudo gem install jekyll bundler
 ```
 
 又出错了= =
 
-```
+```bash
 ERROR:  While executing gem ... (Gem::FilePermissionError)
     You don't have write permissions for the /usr/bin directory.
 ```
 
 还是权限，说你没有写的权限，那好，我给你加 `chmod 777` 总可以了吧
 
-```
+```bash
 chmod 777 /usr/bin
 ```
 
 结果
 
-```
+```bash
 chmod: Unable to change file mode on /usr/bin: Operation not permitted
 ```
 
@@ -56,8 +56,8 @@ chmod: Unable to change file mode on /usr/bin: Operation not permitted
 
 一顿搜索后才发现，原来早在 Mac OS X 10.11 之后就一些目录就被视为系统位置且不可操作了(´･_･`)，那只能换个位置安装喽，后来找到了Jekyll的一些文档，里面写好了针对 10.11 之后应该如何操作的了，地址： [https://jekyllrb.com/docs/troubleshooting/#jekyll--mac-os-x-1011](https://jekyllrb.com/docs/troubleshooting/#jekyll--mac-os-x-1011)
 
-```
-//这两个竟然都可以
+```bash
+#这两个竟然都可以
 sudo gem install -n /usr/local/bin/ jekyll bundler
 sudo gem install jekyll bundler -n /usr/local/bin/
 ```
