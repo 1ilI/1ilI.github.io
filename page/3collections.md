@@ -9,6 +9,8 @@ type: page
 * content
 {:toc}
 
+原作的收集，暂时先这样吧 (╯3╰)
+
 ## 工具
 
 * [box-shadow generator](http://www.cssmatic.com/box-shadow)
@@ -290,4 +292,4 @@ Syntax Theme: Atom Dark or One Dark
 
     首页的卡片翻动效果非常赞。
 
-{% include comments.html %}
+<!-- {% include comments.html %} -->

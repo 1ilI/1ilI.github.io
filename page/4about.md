@@ -26,4 +26,4 @@ type: page
 ## 友情链接
 
 
-{% include comments.html %}
+<!-- {% include comments.html %} -->
