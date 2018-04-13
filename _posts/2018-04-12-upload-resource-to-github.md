@@ -103,7 +103,7 @@ end if
 
 ## Automator 系统内置的神器
 
-不知道 Automator <img alt="automator-logo" src="https://raw.githubusercontent.com/1ilI/1ilI.github.io/master/resource/2018-04/automator-logo.png" width="100px" align="middle"/> 在还没汉化名称前，你们叫它什么，看过有人叫它 扛炮 ，因为其图标就是一个机器人扛着一个炮筒嘛😂  来上一张高清写真大图
+不知道 Automator <img alt="automator-logo" src="https://raw.githubusercontent.com/1ilI/1ilI.github.io/master/resource/2018-04/automator-logo.png" width="100px" align="bottom"/> 在还没汉化名称前，你们叫它什么，看过有人叫它 扛炮 ，因为其图标就是一个机器人扛着一个炮筒嘛😂  来上一张高清写真大图
 
 ![高清写真图](https://raw.githubusercontent.com/1ilI/1ilI.github.io/master/resource/2018-04/Automator.png)
 
