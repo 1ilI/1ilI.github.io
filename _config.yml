@@ -31,6 +31,14 @@ description_footer: 本站记录着我所记录的记录！
 duoshuo_shortname: #hygblog
 disqus_shortname: #1ilI
 
+gitalk:
+    owner: 1ilI
+    repo: blog-comments
+    clientID: 2e32dfb3159f881371a2
+    clientSecret: a186326084ea049d0b25a921c092f31ffc1096c8
+# 在使用其它评论组件时可点击显示 Disqus
+lazy_load_disqus : false
+
 # statistic analysis 统计代码
 # 百度统计 id，将统计代码替换为自己的百度统计id，即
 # hm.src = "//hm.baidu.com/hm.js?xxxxxxxxxxxx";

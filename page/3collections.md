@@ -292,4 +292,4 @@ Syntax Theme: Atom Dark or One Dark
 
     首页的卡片翻动效果非常赞。
 
-<!-- {% include comments.html %} -->
+{% include comments.html %}
