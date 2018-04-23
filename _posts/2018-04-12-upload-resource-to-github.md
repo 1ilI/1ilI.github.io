@@ -51,7 +51,7 @@ tags: GitHub AppleScript Automator
 set resourcePath to "/Users/yue/Desktop/GitHub/1ilI/resource"
 
 --获取要上传文件的路径
-choose file with prompt "􏹞􏰻􏹓􏹟􏱖􏷱请选择要上传的文件"
+choose file with prompt "请选择要上传的文件"
 set uploadfile to result
 set uploadPath to POSIX path of (uploadfile) as string
 
@@ -85,9 +85,9 @@ tell application "Finder"
 end tell
 
 set sourceUrl to ("https://raw.githubusercontent.com/1ilI/1ilI.github.io/master/resource/" & currentDatePath & "/" & uploadFileName)
-display dialog "􏲛􏶱􏰉􏰹􏰛􏲊􏵜上传成功后获取到的链接" default answer sourceUrl buttons {"􏶍􏶧复制", "􏼌􏼍关闭"} default button 1 with title "􏵗􏸔提示" with icon note
+display dialog "上传成功后获取到的链接" default answer sourceUrl buttons {"复制", "关闭"} default button 1 with title "提示" with icon note
 
-if button returned of result = "􏶍􏶧复制" then
+if button returned of result = "复制" then
     --复制到剪切板
 	set the clipboard to (text returned of result) as string
 end if
