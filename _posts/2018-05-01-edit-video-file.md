@@ -62,10 +62,46 @@ for file in `ls | sort -n`; do cat $file >> ~/Desktop/ts文件合并/合并文�
 ## 优化
 之前只考虑了基本流情况，其他异常情况也得加以考虑，比如在合并前检查 ts 片段的个数是否大于2个，大于才执行，另外打开工作文件夹，合并后才展示等等
 
+优化里还可以加上 让用户自己输入合并后的文件名，以及合并成功或失败后有通知提示。
+
 最后上优化后的代码吧：
 ![merge-result](https://raw.githubusercontent.com/1ilI/1ilI.github.io/master/resource/2018-05/merge-result.jpg)
 
 ## 下载
 已制成扩展服务，点击下载 [workflow 文件](https://raw.githubusercontent.com/1ilI/AppleScript/master/视频片段ts文件合并/视频文件 *.ts 合并.zip)，下载解压后安装服务即可。
 
+## 小结
 
+### bash 命令
+
+```bash
+#按文件名数值大小换行列出文件名
+ls | sort -n
+
+#统计文件夹下及子文件夹下指定后缀名文件的个数
+find 文件夹路径 -type f -name "*.ts" | wc -l
+
+#find 结合 xargs 使用，找到文件后再复制到另一位置
+find 文件夹路径 -name *.ts | xargs -I {} cp {} 新目录路径
+
+$# 是传给脚本的参数个数
+$@ 是传给脚本的所有参数的列表
+$0 是脚本本身的名字
+$1 是传递给该shell脚本的第一个参数
+$2 是传递给该shell脚本的第二个参数
+```
+
+### AppleScript
+
+* AppleScript 中使用 `do shell script` 带入路径时，若路径中包含 **空格** 等特定符号会导致运行失败。需要用 `quoted form of` 解决
+
+```applescript
+--路径字符串
+set downloadPath to "/Users/用户名/Library/Containers/com.tencent.tenvideo/Data/Library/Application Support/Download/video"
+
+-- 运行失败
+do shell script " ls " & downloadPath
+
+-- 运行成功
+do shell script " ls " & quoted form of downloadPath
+```
