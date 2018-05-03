@@ -73,7 +73,7 @@ set copyedPath to (resourcePath & "/" & currentDatePath & "/")
 --执行终端命令
 tell application "Terminal"
 	set windowA to do script "mkdir -p " & copyedPath & " && cp " & uploadPath & " $_ " & "
-" & "cd " & copyedPath & "
+" & "cd " & resourcePath & "
 " & "git add ." & "
 " & "git commit -m 'add resource' " & "
 " & "git push origin master"
