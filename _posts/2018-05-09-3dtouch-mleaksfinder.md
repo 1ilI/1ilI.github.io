@@ -144,3 +144,8 @@ pushVC.parameter = [(BViewController *)viewControllerToCommit parameter];
 ![no-leaks](https://raw.githubusercontent.com/1ilI/1ilI.github.io/master/resource/2018-05/3DTouch-iOS11-noleaks.gif)
 
 可以看到第一次的 `viewDidLoad` 到 `dealloc` 这一系列生命周期函数都是内存地址为 `0x7fd6e19883f0` 的 `BViewController` Peek 产生的，后面的就是内存地址为 `0x7fd6df503b30` 的 ViewController Pop 产生的，这样就没有内存泄漏警告了。
+
+
+## 最后
+
+最后这个 demo 和官方样例代码在这里：[https://github.com/1ilI/3DTouch](https://github.com/1ilI/3DTouch)  
