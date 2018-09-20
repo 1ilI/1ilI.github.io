@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Xcode10 使用 SVN 做版本控制"
-categories: git svn Xcode
-tags: git svn Xcode
+categories: Git SVN Xcode
+tags: Git SVN Xcode
 ---
 
 * content
