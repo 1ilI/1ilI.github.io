@@ -63,6 +63,12 @@ type: page
 
 </style>
 
+# iPhone 分辨率、PPI、Points 等一览
+
+摘自[PaintCode](https://www.paintcodeapp.com/news/ultimate-guide-to-iphone-resolutions)
+![iPhone-Resolutions](https://raw.githubusercontent.com/1ilI/1ilI.github.io/master/resource/2018-10/iPhone-Resolutions-clean.png)
+
+
 # 在 Objective-C 中声明 Block
 
 ## 作为 <strong>局部变量</strong> :
