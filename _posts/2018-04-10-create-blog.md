@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "用 jekyll 写的第一篇博客"
+title: "第一篇用 jekyll 写的博客"
 categories: jekyll
 tags: jekyll rake HTML
 ---
