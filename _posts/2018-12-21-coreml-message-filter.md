@@ -188,6 +188,12 @@ sentimentPredictor.predictedLabel(for: "经鉴定，您的资质良好，完善�
 ## 完成
 我大致实现了这些功能，[项目在此](https://github.com/1ilI/MessageFilter)
 
+`CreateMLModel` 文件夹里是训练模型的 playground <br/>
+`MessageFilter` 是 iOS 应用工程
+
+该工程没有包含我训练的模型，要想运行使用，<br/>
+**先把自己的 mlmodel 训练好并导入进去，然后就可以了**
+
 <div align="center"> <img alt="message-filter-demo" src="https://raw.githubusercontent.com/1ilI/1ilI.github.io/master/resource/2018-12/message-filter-demo.gif"/></div>
 
 
